@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import gsap from 'gsap'
 import { chipImg } from '../utils'
 import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
 import { animateWithGsap } from '../utils/anime'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger);
 
 const HowItWorks = () => {
+
+  const videoRef = useRef();
+
   useGSAP(() => {
-    gsap.from('#chip', {
+    gsap.to ('#chip', {
         scrollTrigger: {
             trigger: '#chip',
-            start: '20% bottom'
-
-        }, opacity: 0,
-          scale: 2,
+            start: '20% bottom' }, 
+          opacity: 1,
+          scale: 1.4,
           duration: 2,
           ease: 'power2.inOut'
 
@@ -28,9 +32,9 @@ const HowItWorks = () => {
   return (
     <section className='common-padding'>
         <div className='screen-max-width'>
-            <div id='chip' className='flex-center w-full my-20'>
-              <img src={chipImg} alt='chip' width={180} height={180} />
-            </div>
+            <div id="chip" className="flex-center w-full my-20 opacity-0">
+          <img src={chipImg} alt="chip" width={180} height={180} />
+        </div>
             <div className='flex flex-col items-center'>
                 <h2 className='hiw-title'>
                   A17 Pro chip.<br/> A Monster PowerHouse
