@@ -1,8 +1,17 @@
-# React + Vite
+# iPhone Page Clone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a clone of the iPhone page from Apple, showcasing a detailed and visually appealing design using Three.js and modern web development techniques. It replicates the smooth transitions, animations, and high-quality visuals of the original page.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Three.js Integration:** Utilizes Three.js for 3D graphics and animations.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Smooth Transitions:** Implements CSS and JavaScript for seamless user experience.
+- **High-Quality Visuals:** Replicates the sleek and modern look of Apple's iPhone page.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Three.js
